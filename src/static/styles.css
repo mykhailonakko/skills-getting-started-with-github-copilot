@@ -74,6 +74,57 @@ section h3 {
   margin-bottom: 8px;
 }
 
+/* NEW: participants section styling */
+.participants-section {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px dashed #eee;
+}
+
+.participants-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #333;
+  font-size: 14px;
+}
+
+.participants-list {
+  list-style: disc;
+  list-style-position: inside;
+  margin: 0;
+  padding-left: 14px;
+  max-height: 140px;
+  overflow: auto;
+}
+
+.participant-item {
+  background: linear-gradient(90deg, rgba(250,250,250,1) 0%, rgba(245,247,255,1) 100%);
+  padding: 6px 8px;
+  margin-bottom: 6px;
+  border-radius: 6px;
+  border: 1px solid #eef1ff;
+  font-size: 14px;
+  color: #1a237e;
+}
+
+/* small placeholder for no participants */
+.participant-empty {
+  margin: 0;
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 13px;
+}
+
+/* reuse existing info style but make sure it fits inside card */
+.participant-empty.info {
+  background-color: #d1ecf1;
+  color: #0c5460;
+  border: 1px solid #bee5eb;
+}
+
 .form-group {
   margin-bottom: 15px;
 }
